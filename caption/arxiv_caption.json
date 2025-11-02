@@ -1,0 +1,1287 @@
+{
+  "2403_14627v2_0": {
+    "caption": "Our MVSplat outperforms pixelSplat [1] in terms of both appearance and\ngeometry quality with 10\u00d7 fewer parameters and more than 2\u00d7 faster inference speed.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2403_14627v2_0.png",
+    "url": ""
+  },
+  "2403_14627v2_1": {
+    "caption": "Overview of MVSplat. Given multiple posed images as input, MVSplat first\nextracts multi-view image features with a Transformer. Then, the per-view cost volumes\nusing plane sweeping are constructed. The Transformer features and cost volumes are\nconcatenated together as input to a 2D U-Net (with cross-view attention) for cost\nvolume refinement and predicting per-view depth maps. The per-view depth maps are\nunprojected to 3D and combined using a simple deterministic union operation as the 3D\nGaussian centers. The opacity, covariance and color Gaussian parameters are predicted\njointly with the depth maps. Finally, novel views are rendered from the predicted 3D\nGaussians with the rasterization operation.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2403_14627v2_1.png",
+    "url": ""
+  },
+  "2403_14627v2_2": {
+    "caption": "Comparisons with the state of the art. The first three rows are from\nRealEstate10K (indoor scenes), while the last one is from ACID (outdoor scenes).\nModels are trained with a collection of training scenes from each indicated dataset, and\ntested on novel scenes from the same dataset. MVSplat surpasses all other competitive\nmodels in rendering challenging regions due to the effectiveness of our cost volume_x0002_based geometry representation",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2403_14627v2_2.png",
+    "url": ""
+  },
+  "2412_03572v1_0": {
+    "caption": "We train a Navigation World Model (NWM) from video footage of robots and their associated navigation\nactions (a). After training, NWM can evaluate trajectories by synthesizing their videos and scoring the final frame\u2019s\nsimilarity with the goal (b). We use NWM to plan from scratch or rank experts navigation trajectories, improving\ndownstream visual navigation performance. In unknown environments, NWM can simulate imagined trajectories\nfrom a single image (c). In all examples above, the input to the model is the first image and actions, then the model\nauto-regressively synthesizes future observations",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2412_03572v1_0.png",
+    "url": ""
+  },
+  "2412_03572v1_1": {
+    "caption": "Conditional Diffusion Transformer\n(CDiT) Block. The block\u2019s complexity is\nlinear with the number of frames",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2412_03572v1_1.png",
+    "url": ""
+  },
+  "2412_03572v1_2": {
+    "caption": "Following trajectories in known environments. We include qualitative video generation comparisons of different\nmodels following ground truth trajectories.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2412_03572v1_2.png",
+    "url": ""
+  },
+  "2412_03572v1_3": {
+    "caption": "Navigating Unknown Environments. NWM is conditioned on a single image, and autoregressively predicts the\nnext states given the associated actions (marked in yellow).",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2412_03572v1_3.png",
+    "url": ""
+  },
+  "2411_04924v1_0": {
+    "caption": "Examples of our MVSplat360. Given sparse and wide-baseline observations of diverse\nin-the-wild scenes, MVSplat360 can directly render 360\u00b0 novel views (inward or outward facing) or\nother natural camera trajectory views in a feed-forward manner, without any per-scene optimization.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2411_04924v1_0.png",
+    "url": ""
+  },
+  "2411_04924v1_1": {
+    "caption": "Overview of our MVSplat360. (a) Given sparse posed images as input, we first match\nand fuse the multi-view information using a multi-view Transformer and cost volume-based encoder.\n(b) Next, a 3DGS representation is constructed to represent the coarse geometry of the entire scene.\n(c) Considering such coarse reconstruction is imperfect, we further adapt a pre-trained SVD, using\nfeatures rendered from the 3DGS representation as conditions to achieve 360\u00b0 novel view synthesis.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2411_04924v1_1.png",
+    "url": ""
+  },
+  "2409_12753v1_0": {
+    "caption": "Figure 1: Comparison of our DrivingForward with the lat-\nest related works. We achieve real-time reconstruction from\nsmall overlap inputs with fewer computing resources.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2409_12753v1_0.png",
+    "url": ""
+  },
+  "2409_12753v1_1": {
+    "caption": "Overview of DrivingForward. Given sparse surround-view input from vehicle-mounted cameras, our model learns\nscale-aware localization for Gaussian primitives from the small overlap of spatial and temporal context views. A Gaussian\nnetwork predicts other parameters from each image individually. This feed-forward pipeline enables the real-time reconstruction\nof driving scenes and the independent prediction from single-frame images supports flexible input modes. At the inference stage,\nwe include only the depth network and the Gaussian network, as shown in the lower part of the figure.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2409_12753v1_1.png",
+    "url": ""
+  },
+  "2409_12753v1_2": {
+    "caption": ": Qualitative results of novel surrounding views. Details from surrounding views are present for easy comparison.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2409_12753v1_2.png",
+    "url": ""
+  },
+  "2409_02382v1_0": {
+    "caption": "The overall framework of the GGS. Input multiple frames and estimate depth maps through MVS and multi view\ndepth refinement modules, combined with 3DGS to synthesize novel views. And through the virtual lane generation module,\nswitch lanes with high quality. In addition, multi-lane diffusion loss is introduced to supervise the novel view synthesis in the\npresence of obstacles.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2409_02382v1_0.png",
+    "url": ""
+  },
+  "2409_02382v1_1": {
+    "caption": "The method of using a lane converter to create a\nvirtual lane and then switching back to the real lane enables\nthe model to improve the quality of lane switching.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2409_02382v1_1.png",
+    "url": ""
+  },
+  "2409_02382v1_2": {
+    "caption": "If we switch from the right lane to the left lane,\nthe red area represents the blind spot of the right lane. When\nrendering the left lane, in order to avoid voids, the content\nof that area needs to be imagined in some way.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2409_02382v1_2.png",
+    "url": ""
+  },
+  "2407_14108v1_0": {
+    "caption": "Illustration of multiple BeV representations for BeV\nsemantic segmentation. A camera is represented by the triangle at\nthe bottom of each BeV. Features are represented by colors where\nblue, red and green represent the streetlight, car and lane marking\nrespectively. (a) Depth-based methods place image features along\nthe optical ray on the surface of objects. (b) In projection-based\nmethods, 3D points on the optical ray receive the same feature. (c)\nAttention-based methods use downsampled dense spatial queries\nto keep memory costs down. (d) In GaussianBeV, the scene is\nrepresented by a set of rotated gaussians that finely describes the\nsemantic structures in the scene.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2407_14108v1_0.png",
+    "url": ""
+  },
+  "2407_14108v1_1": {
+    "caption": "The network takes as input a set of multiview images and extracts features for each of them. The 3D\ngaussian generator module (Sec 3.2) predicts a 3D gaussian representation G of the scene which is then sent to the BeV rasterizer module\n(Sec 3.3) to performs BeV rendering. The resulting BeV feature map B is passed through a BeV backbone and segmentation heads to\nobtain the segmentation prediction. G and B are represented with colors only for visualization purpose.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2407_14108v1_1.png",
+    "url": ""
+  },
+  "2407_14108v1_2": {
+    "caption": "3D Gaussian generator. This module takes as input the feature map extracted from each camera, as well as the set of intrinsic\n{Kn} and extrinsic {Rn|tn} parameters. For each pixel, it calculates the corresponding 3D gaussian by passing through prediction heads\n(green boxes). Some of these predictions are then decoded (blue and red boxes) and transformed to be expressed in the world reference\nframe (yellow boxes). All predicted gaussian parameters are then concatenated to produce the 3D gaussian representation G of the scene.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2407_14108v1_2.png",
+    "url": ""
+  },
+  "2407_14108v1_3": {
+    "caption": "Visualization of predicted vehicle segmentation in the first three rows and drivable area (blue) / lane boundary (orange) segmen-\ntation in the last three rows, on the nuScenes validation set. PCA is used to vizualize the BeV feature map.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2407_14108v1_3.png",
+    "url": ""
+  },
+  "2403_06845v2_0": {
+    "caption": "DriveDreamer-2 demonstrates powerful capabilities in generating multi-view\ndriving videos. DriveDreamer-2 can produce driving videos based on user descriptions,\nwhich improves the diversity of the synthetic data. Besides, the generation quality\nof DriveDreamer-2 surpasses other state-of-the-art methods and effectively enhances\ndownstream tasks.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2403_06845v2_0.png",
+    "url": ""
+  },
+  "2403_06845v2_1": {
+    "caption": "The overall framework of DriveDreamer-2 involves initially generating agent\ntrajectories according to the user query, followed by producing a realistic HDMap, and\nfinally generating multi-view driving videos.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2403_06845v2_1.png",
+    "url": ""
+  },
+  "2403_06845v2_2": {
+    "caption": "The overview of customized trajectory generation. Initially, we leverage the\nestablished function library to assemble Text-to-Python-Script pairs. Subsequently, the\nconstructed dataset is employed to finetune LLM. Finally, the customized trajectories\nis generated by LLM based on user query",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2403_06845v2_2.png",
+    "url": ""
+  },
+  "2309_09777v2_0": {
+    "caption": "DriveDreamer demonstrates a comprehensive understanding of driving scenarios. It excels in controllable driving video gener-\nation, aligning seamlessly with text prompts and structured traffic constraints. DriveDreamer can also interact with the driving scene and\npredict different future driving videos, based on input actions. Furthermore, DriveDreamer extends its utility to anticipate future actions.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2309_09777v2_0.png",
+    "url": ""
+  },
+  "2309_09777v2_1": {
+    "caption": "Two-stage training pipeline of DriveDreamer.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2309_09777v2_1.png",
+    "url": ""
+  },
+  "2309_09777v2_2": {
+    "caption": "Overall framework of DriveDreamer. The framework initiates with reference frame I0 and road structural information (i.e.,\nHDMapH0 and 3D box B0). DriveDreamer employs the ActionFormer to predict future road structural features, which serve as conditions\nprovided to Auto-DM, generating future driving videos \u02c6IN\u22121\ni=0 . Additionally, text prompts enable dynamic scenario style adjustments. The\nmodel integrates past driving actions and multi-scale features from Auto-DM to generate plausible future driving action",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2309_09777v2_2.png",
+    "url": ""
+  },
+  "2312_12337v4_0": {
+    "caption": "SfM does not reconstruct camera poses\nin real-world, metric scale\u2014poses are scaled by an arbitrary scale\nfactor that is different for each scene. To render correct views, our\nmodel\u2019s 3D reconstruction needs to be consistent with this arbitrary\nscale. We illustrate how our epipolar encoder solves this problem.\nFeatures belonging to the ray\u2019s corresponding pixel on the left are\ncompared with features sampled along the epipolar line on the right.\nEpipolar samples are augmented with their positionally-encoded\ndepths along the ray, which allows our encoder to record correct\ndepths. Recorded depths are later used for depth prediction",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2312_12337v4_0.png",
+    "url": ""
+  },
+  "2312_12337v4_1": {
+    "caption": "Proposed probabilistic prediction of pixel-aligned Gaussians. For every pixel feature F[u] in the input feature map, a neural\nnetwork f predicts Gaussian primitive parameters \u03a3 and S. Gaussian locations \u00b5 and opacities \u03b1 are not predicted directly, which would\nlead to local minima. Instead, f predicts per-pixel discrete probability distributions over depths p\u03d5(z), parameterized by \u03d5. Sampling then\nyields the locations of Gaussian primitives. The opacity of each Gaussian is set to the probability of the sampled depth bucket. The final set\nof Gaussian primitives can then be rendered from novel views using the splatting algorithm proposed by Kerbl et al. [19]. Note that for\nbrevity, we use h to represent the function that computes depths from bucket indices (see equations 6 and 7).",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2312_12337v4_1.png",
+    "url": ""
+  },
+  "2312_12337v4_2": {
+    "caption": "3D Gaussians (top) and corresponding depth maps (bottom) predicted by our method. In contrast to light field rendering\nmethods like GPNR [47] and that of Du et al. [10], our method produces an explicit 3D representation. Here, we show zoomed-out views of\nthe Gaussians our method produces along with rendered depth maps, as viewed from the two reference viewpoints",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2312_12337v4_2.png",
+    "url": ""
+  },
+  "2411_11921v1_0": {
+    "caption": "Pipeline of DeSiRe-GS. To tackle the challenges in self-supervised street scene decomposition. The entire pipeline is optimized\nwithout extra annotations in a self-supervised manner, leading to superior scene decomposition ability and rendering quality.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2411_11921v1_0.png",
+    "url": ""
+  },
+  "2411_11921v1_1": {
+    "caption": "Gaussian Scale Regularization.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2411_11921v1_1.png",
+    "url": ""
+  },
+  "2411_11921v1_2": {
+    "caption": "Qualitative Comparison.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2411_11921v1_2.png",
+    "url": ""
+  },
+  "2411_14257v1_0": {
+    "caption": "We identify SAE latents in the ffnal token of the entity residual stream (i.e. hidden state) that almost exclusively activate on either unknown or known entities (scatter plot on the left). Modulating the activation values of these latents, e.g. increasing the known entity latent when asking a question about a made-up athlete increases the tendency to hallucinate.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2411_14257v1_0.png",
+    "url": ""
+  },
+  "2411_14257v1_1": {
+    "caption": "Layerwise evolution of the Top 5 latents in Gemma 2 2B SAEs, as measured by their\nknown (left) and unknown (right) latent separation scores (sknown and sunknown). Error bars show\nmaximum and minimum scores. MaxMin (red line) refers to the minimum separation score across\nentities of the best latent. This represents how entity-agnostic is the most general latent per layer. In\nboth cases, the middle layers provide the best-performing latents.\n",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2411_14257v1_1.jpg",
+    "url": ""
+  },
+  "2411_14257v1_2": {
+    "caption": "Left: Number of times Gemma 2 2B refuses to answer in 100 queries about unknown\nentities. We examine the unmodified original model, the model steered with the known entity latent\nand unknown entity latent, and the model with the unknown entity latent projected out of its weights\n(referred to as Orthogonalized model). Steering with (10) random latents are shown for comparison.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2411_14257v1_2.jpg",
+    "url": ""
+  },
+  "2411_14257v1_3": {
+    "caption": "Right: This example illustrates the effect of steering with the unknown entity recognition latent\n(same as in Table 1). The steering induces the model to refuse to answer about a well-known\nbasketball player.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2411_14257v1_3.jpg",
+    "url": ""
+  },
+  "2411_14257v1_4": {
+    "caption": "Activation frequencies of Gemma 2 9B SAE latents on known and unknown Prompts, in\nplayer entity type.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2411_14257v1_4.jpg",
+    "url": ""
+  },
+  "2405_05378v1_0": {
+    "caption": "Figure 1: Pipeline Overview. We prompt LLMs with a dialogue between two colleagues (depicted as icons) in\nvarious hiring scenarios1, varying based on race and caste attributes. The LLMs generate the remaining conversation about an applicant for a job. Using a human-validated LLM,we measure CHAST metrics in the generated conversations,detecting (subtle) harms regarding group identity that Perspec-tive API and other baseline models often miss.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2405_05378v1_0.png",
+    "url": ""
+  },
+  "2405_05378v1_1": {
+    "caption": "CHAST metrics derived from Social Identity Threat Theory (SIT) (Branscombe et al., 1999a; Ma et al., 2023),\nIntergroup Threat Theory (ITT) (Stephan and Cookie, 2000), Frameworks of Harm (FoH) (Dev et al., 2022), and prior research on harm in job opportunities outcomes (Yam and Skorburg, 2021; Roberts, 2015). Each metric includes a definition and an illustrative example from a conversation generated by LLMs in our study. The examples indicate the generating model, caste/race attribute, and occupation utilized to generate the conversation. Recall that the examples are based on conversations involving two colleagues (e.g. White/Brahmin) discussing a job applicant (e.g. Black/Dalit) from a different identity group.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2405_05378v1_1.jpg",
+    "url": ""
+  },
+  "2405_05378v1_2": {
+    "caption": "For each combination of occupation, cultural concept,\n and LLM, we generate 30 conversations, resulting in 4\n\u00d72 \u00d7 8 \u00d7 30 = 1, 920 total conversations.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2405_05378v1_2.jpg",
+    "url": ""
+  },
+  "2401_16702v1_0": {
+    "caption": "Our observation on multi-granularity noisy correspondence (MNC) in video understand-ing. (Left) The green timeline denotes the alignable captions while the red timeline indicates the unalignable captions. The green text in t5 denotes partially correlated words w.r.t v5. (Right) The dashed line represents the original alignment according to timestamps and the red block indicates the misaligned clip-caption pair. The green block denotes the ground-truth alignment. The solid line denotes the re-alignment by Dynamic Time Warping (M\u00a8uller, 2007) which struggles to handle noisy correspondence well.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2401_16702v1_0.png",
+    "url": ""
+  },
+  "2401_16702v1_1": {
+    "caption": "Video-paragraph retrieval on YouCookII(Background Removed). The best and second-best re-sults are bold and underlined, respectively.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2401_16702v1_1.jpg",
+    "url": ""
+  },
+  "2401_16702v1_2": {
+    "caption": "Video-paragraph retrieval\non YouCookII (Background Kept).",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2401_16702v1_2.jpg",
+    "url": ""
+  },
+  "2405_13077v2_0": {
+    "caption": "Diagram of our IRIS self-jailbreaking method. IRIS iteratively prompts the LLM to self-explain its behavior and modify the initial prompt until the LLM responds with a non-rejection message. Then, IRIS prompts the LLM to rate the harmfulness of its output on a scale of 1-5 and refines it to be a 5.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2405_13077v2_0.png",
+    "url": ""
+  },
+  "2405_13077v2_1": {
+    "caption": "Comparison of methods for direct jailbreak attacks on the AdvBench Subset. We report the attack success rate determined by human evaluation and the av-erage number of queries required for each method. IRIS-2x denotes two independent trials of the IRIS method.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2405_13077v2_1.jpg",
+    "url": ""
+  },
+  "2410_09770v1_0": {
+    "caption": "Architectural diagram of Regeneration based Approach.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2410_09770v1_0.png",
+    "url": ""
+  },
+  "2410_09770v1_1": {
+    "caption": "An example of adjective token attack. Here, sub: substitution, adj: Adjective, sim: similar token , DA : AI word dictionary (sorted high-top to bottom-low).",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2410_09770v1_1.png",
+    "url": ""
+  },
+  "2306_07261v5_0": {
+    "caption": "Pareto frontier attained by each GBM-based algorithm, together with the Pareto frontier attained by postprocessing the GBM-based model with highest unprocessed validation accuracy, m\u2217. Results for remaining ACS datasets shown in Figure A1.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2306_07261v5_0.jpg",
+    "url": ""
+  },
+  "2306_07261v5_1": {
+    "caption": "Mean time to fit GBM and GBM-based preprocessing and inprocessing algorithms on the ACSIncome (left plot) and ACSPublicCoverage (right plot) datasets, with 95% confidence intervals. The time taken to run postprocessing is also shown for each algorithm as a stacked dark bar. Note the log scale: the EG inprocessing method takes one order of magnitude longer to fit than the base GBM.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2306_07261v5_1.jpg",
+    "url": ""
+  },
+  "2306_07261v5_2": {
+    "caption": "[Binary protected groups] Results for a counterpart to the main experiment, in which only samples from the two largest groups are used (White and Black). Note the significantly reduced y axis range when compared with Figure 6. Results for remaining ACS datasets shown in Figure A14.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2306_07261v5_2.jpg",
+    "url": ""
+  },
+  "2306_07261v5_3": {
+    "caption": "Pareto frontier attainable by each GBM-based ML algorithm, together with the Pareto\nfrontier attained by postprocessing m\u2217\n, the GBM-based model with highest unprocessed validation\naccuracy. Plotted Pareto curves are linearly interpolated between Pareto-efficient models.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2306_07261v5_3.jpg",
+    "url": ""
+  },
+  "2309_03350v1_0": {
+    "caption": "Illustration of spatial and frequency results after adding independent Gaussian and block noise. (a) At the resolution of 64 \u00d7 64 and 256 \u00d7 256, the same noise level results in different perceptual effects, and in the frequency plot, the SNR curve shifts upward.The noise is N(0, 0.32) for (a). These SNR curves are universally applicable to most natural images.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2309_03350v1_0.png",
+    "url": ""
+  },
+  "2309_03350v1_1": {
+    "caption": "Illustration of spatial and frequency results after adding independent Gaussian and block noise. (b) At the resolution of 64 \u00d7 64 and 256 \u00d7 256, the same noise level results in different perceptual effects, and in the frequency plot, the SNR curve shifts upward.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2309_03350v1_1.png",
+    "url": ""
+  },
+  "2309_03350v1_2": {
+    "caption": "The effectiveness of block noise. We compare the performance ofRDM along the training on (a) ImageNet 256 \u00d7 256.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2309_03350v1_2.png",
+    "url": ""
+  },
+  "2309_03350v1_3": {
+    "caption": "The effectiveness of block noise. We compare the performance ofRDM along the training on (b) CelebA-HQ 256 \u00d7 256.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2309_03350v1_3.png",
+    "url": ""
+  },
+  "2401_10568v2_0": {
+    "caption": "Comparison with existing environments. CivRealm features the following characteristics for learning and reasoning. Imperfect info: The full state is partially observable. Stochastic: The dynamics of the environment is non-deterministic. Multi-goal: There are multiple victory condi-tions in the game. Dynamic space: The state and action space of a single player change dynamically in a game. Multi-agent: There are multiple interacting players in the game. General-sum: It is a mixed motive game, where cooperation and competition coexist. Changing players: The number of players can increase or decrease during a single game. Comm.: players can explicitly communi-\ncate in the game. Tensor & Lang.: The environment provides both tensor and language APIs.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2401_10568v2_0.jpg",
+    "url": ""
+  },
+  "2401_10568v2_1": {
+    "caption": "Civilization evolves as the game unfolds, and the potential state and action space explode.This figure focuses on 4 of the 8 ages, wherein technological advancements unlock a greater number of buildings and units. Throughout the course of the game, the state can grow from 1015 to 10650,and the action space can expand from 104 to 10166 (\u00a7 D). This figure only shows some example elements; the full game includes 87 types of technologies, 68 types of buildings, 52 types of units, 6 government types, and 5 diplomatic states, all subject to the rule sets used and are customizable.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2401_10568v2_1.png",
+    "url": ""
+  },
+  "2409_20537v1_0": {
+    "caption": "HPT architecture. HPT is modularized into stems, trunk, and heads. The stem, consist-ing of a proprioception tokenizer and a vision tokenizer, maps the vision and proprioception ob-servations of different embodiments to a fixed number (e.g. 16) of tokens. The shared trunk,which is a Transformer, maps the concatenated tokens into shared representations. The head then maps the processed tokens to actions in different downstream tasks. For a specific embodiment,one stem/head pair is activated (denoted by the switch). The trunk is shared and pre-trained on action-labeled data with supervised learning and then transferred to new embodiments. This proce-dure scales up to 52 datasets and 1B parameters.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2409_20537v1_0.png",
+    "url": ""
+  },
+  "2409_20537v1_1": {
+    "caption": "Joint Pre-training with Simulation and Hu-man Videos. The baseline denotes the default setting without simulation and human datasets. Setting: We run the experiments with a training corpus of datasets with 1000 trajectories maximum.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2409_20537v1_1.png",
+    "url": ""
+  },
+  "2409_20537v1_2": {
+    "caption": "Large-scale Dataset Heterogeneity in Robotics. We show different dataset mixtures at increasing\nscales (top row) across trajectory counts, dataset sample counts, and sampling weights (bottom row). We also\nshow illustrations of the different embodiments including real robots, simulations, and human videos. By default,\nduring training, we use a uniform distribution to sample from each of the embodiment datasets.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2409_20537v1_2.jpg",
+    "url": ""
+  },
+  "2402_11140v1_0": {
+    "caption": "Boosting of thoughts iteratively enhances the prompt by adding experience, which comprises the analysis conducted by large language models (LLM or LM) on the generated thought chain. The experience specifically contains the thought chain itself, the corresponding error reports, and detailed advice on revising each reasoning step. Thus, those ineffective thoughts marked with a red cross can also contribute to prompt refinement. By accumulating experiences over iterations in the prompt, BoT can eventually yield a correct thought chain starting from a simple prompt. The examples presented here are extracted from results obtained by applying GPT-4 with BoT on the Game of 24 task.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2402_11140v1_0.png",
+    "url": ""
+  },
+  "2402_11140v1_1": {
+    "caption": "Utilizing BoT with GPT-4, even without human annotations, yields a notable performance enhancement.\nOnce the simple initial prompt of BoT contains CoT examples, the corresponding approach BoT+CoT exhibits\neven higher solving rates. Our framework is also evaluated against leading methods such as Model Selection\nZhao et al. (2023), PHP Zheng et al. (2023), and CSV Zhou et al. (2023), each achieving state-of-the-art (SOTA)\nperformance on the SVAMP, AQuA, and GSM8K & MATH datasets, respectively.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2402_11140v1_1.jpg",
+    "url": ""
+  },
+  "2402_11140v1_2": {
+    "caption": "Evaluating solve rates by applying BoT and BoT+CoT in GPT-4 OpenAI (2023) and Llama2 Touvron et al. (2023).",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2402_11140v1_2.jpg",
+    "url": ""
+  },
+  "2406_17534v2_0": {
+    "caption": "The problems of ICL-based few-shot HTC and our solutions. MLM, CLS and DCL denote Mask Language Modeling, Layer-wise CLaSsification and Divergent Contrastive Learning, which are the three objectives for indexer training",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2406_17534v2_0.png",
+    "url": ""
+  },
+  "2406_17534v2_1": {
+    "caption": "The architecture of retrieval-style in-context learning for HTC. The [Pj] term is a soft prompt template token to learn the j-th hierarchical layer label index representation.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2406_17534v2_1.png",
+    "url": ""
+  },
+  "2408_13467v2_0": {
+    "caption": "he LLMOps pipeline namely \\llamaduo for migrating from service LLMs to small-scale local LLMs involves three phases. In the Development/PoC phase, \\textcircled{1} users manually engineer prompts to interact with service LLMs and \\textcircled{2} collect satisfying (prompt, response) pairs into train and test datasets. In the Alignment phase, \\textcircled{3} local LLMs are aligned with the train dataset, \\textcircled{4} tested on the test dataset, and \\textcircled{5} evaluated by service LLMs. \\textcircled{6} Synthetic data is generated iteratively until the performance of the aligned model meets a threshold. \nIn the Deployment phase, \\textcircled{7} the satisfactory model is deployed in constrained environments.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2408_13467v2_0.png",
+    "url": ""
+  },
+  "2408_13467v2_1": {
+    "caption": "Long-term operational cost comparison between fine-tuning a local LLM and API-based token usage of GPT4o.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2408_13467v2_1.png",
+    "url": ""
+  },
+  "2403_00165v2_0": {
+    "caption": " An example document tagged with 3 classes.\nWe automatically enrich each node with class-indicative\nterms and utilize LLMs to facilitate classification.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2403_00165v2_0.png",
+    "url": ""
+  },
+  "2403_00165v2_1": {
+    "caption": "Overview of the TELEClass framework.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2403_00165v2_1.png",
+    "url": ""
+  },
+  "2404_07851v1_0": {
+    "caption": "Guiding LLMs with external feedback enhances MT post-editing capabilities. We categorize feedback into different granularity: Generic, Score-based, and Fine-grained. Fine-grained feedback is annotated either by humans or automatic evaluation tools",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2404_07851v1_0.png",
+    "url": ""
+  },
+  "2404_07851v1_1": {
+    "caption": "Human evaluation results for 3 language pairs.\n\nWe collect a total of 150 annotations for each language pair. Overall Quality: Output translation from the finetuned model is better than the initial translation; Resolve Errors: Output translation resolves errors in the initial translation.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2404_07851v1_1.png",
+    "url": ""
+  },
+  "2305_14282v3_0": {
+    "caption": "INSTRUCTSCORE generates a comprehensive error diagnostic report for text generation tasks, including error type, location, severity label, and explanation. Based on this report, INSTRUCTSCORE counts the number of major errors (each worth \u22125) and minor errors (each worth \u22121), ultimately assigning a final score.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2305_14282v3_0.png",
+    "url": ""
+  },
+  "2305_14282v3_1": {
+    "caption": "Our INSTRUCTSCORE pipeline consists of three components: First, we construct synthetic data from GPT-4 and use it to fine-tune a 7B LLAMA model. Second, we sample from real-world machine-generated distribution to trigger INSTRUCTSCORE\u2019s failure modes. We query GPT-4 on each failure mode and gather automatic feedback. Third, we select explanations that are most aligned with human to further fine-tune LLaMA model. Step 2 and 3 can be repeated to iteratively refine the model output.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2305_14282v3_1.png",
+    "url": ""
+  },
+  "2405_19893v1_0": {
+    "caption": ": A toy example illustrating the difference between similarity and utility, where the score of similarity\nmodel is given by BGE1\n. Can we reunite the virtues of\nboth worlds and come up with a better model?",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2405_19893v1_0.png",
+    "url": ""
+  },
+  "2405_19893v1_1": {
+    "caption": "The influence of passage window size.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2405_19893v1_1.png",
+    "url": ""
+  },
+  "2409_09272v1_0": {
+    "caption": "Frontend codec-based decoupling model (\u2460) of\nSafeEar.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2409_09272v1_0.png",
+    "url": ""
+  },
+  "2409_09272v1_1": {
+    "caption": " Bottlneck & Shuffle layers (\u2461) of SafeEar",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2409_09272v1_1.png",
+    "url": ""
+  },
+  "2407_04675v2_0": {
+    "caption": ": The training procedure of our audio encoder LUISE.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2407_04675v2_0.png",
+    "url": ""
+  },
+  "2407_04675v2_1": {
+    "caption": ": The model framework used in Seed-ASR. When contexts are provided, the instruction is \"There are relevant contexts, transcribe the speech into text:\". Otherwise, the instruction is \"Transcribe the speech into text:\"",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2407_04675v2_1.png",
+    "url": ""
+  },
+  "2407_04675v2_2": {
+    "caption": "The stage-wise training recipe for the development of Seed-ASR. SSL represents selfsupervised learning, SFT represents supervised fine-tuning, RL represents reinforcement learning.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2407_04675v2_2.png",
+    "url": ""
+  },
+  "2405_02132v3_0": {
+    "caption": "Overall model structure. The embedding sequence generated by the projector is concatenated with the text embedding sequence. This concatenated sequence is fed directly into the decoder-only LLM, predicting the next token.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2405_02132v3_0.png",
+    "url": ""
+  },
+  "2405_02132v3_1": {
+    "caption": "Comparison of projector modules in terms of CER%(\u2193). The encoder is fixed to HuBERT and the LLM is fixed to Atom-7B. Only one epoch is trained. Here, \u2018all\u2019 represents the simultaneous unfreezing of the speech encoder, projector, and LLM LoRA matrix during training",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2405_02132v3_1.png",
+    "url": ""
+  },
+  "2410_00037v2_0": {
+    "caption": "Architecture and training of Mimi, our neural audio codec, with its split residual vector quantization. During training (blue part, top), we distill noncausal embeddings from WavLM (Chen et al, 2022) into a single vector quantizer which produces semantic tokens, and is combined with separate acoustic tokens for reconstruction.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2410_00037v2_0.png",
+    "url": ""
+  },
+  "2410_00037v2_1": {
+    "caption": "Overview of Moshi. Moshi is a speech-text foundation model which enables real-time spoken dialogue. The main components of Moshi\u2019s architecture are: a bespoke text language model backbone (Helium, see Section 3.2); a neural audio codec with residual vector quantization and with semantic knowledge distilled from a self-supervised speech model (Mimi, Section 3.3); the streaming, hierarchical generation of semantic and acoustic tokens for both the user and Moshi, along with time-aligned text tokens for Moshi when using Inner Monologue (Section 3.4).",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2410_00037v2_1.png",
+    "url": ""
+  },
+  "2403_18684v2_0": {
+    "caption": "Relationship between standard ranking metrics and contrastive entropy for different Dense Retrieval models on the MSMARCO Passage Ranking dataset. The figures illustrate the contrastive entropy (x-axis) versus standard ranking metrics (y-axis). The results indicate a strong positive correlation. Besides, the figures highlight an emergent ability phenomenon around a contrastive entropy value of approximately 0.25, where there is a significant improvement in ranking metrics.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2403_18684v2_0.png",
+    "url": ""
+  },
+  "2403_18684v2_1": {
+    "caption": "Scaling laws for model performance as a function of model size on MSMARCO Passage Ranking (left) and T2Ranking (right) datasets. The figures display the contrastive entropy (y-axis) against the number of non-embedding parameters (x-axis, logarithmic scale) for different models. Points and stars represent the actual performance, aligning closely along a straight line. The dashed lines are fitted using Eq.~(\\ref{eq:model_size_scaling_law}), demonstrating a close match with the empirical data.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2403_18684v2_1.png",
+    "url": ""
+  },
+  "2410_09584v1_0": {
+    "caption": "The construction pipeline, diagram and statistics of FollowRAG.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2410_09584v1_0.png",
+    "url": ""
+  },
+  "2410_09584v1_1": {
+    "caption": "The analysis of instruction counts on FollowRAG (IF) performance.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2410_09584v1_1.png",
+    "url": ""
+  },
+  "2410_09584v1_2": {
+    "caption": "The scaling analysis of retrieved document count and FollowRAG (IF) performance.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2410_09584v1_2.png",
+    "url": ""
+  },
+  "2410_10594v1_0": {
+    "caption": "TextRAG (left) vs. VisRAG (right).\nTraditional text-based RAG (TextRAG) relies on parsed texts for retrieval and generation, losing visual information in multi-modal documents.\nOur vision-based RAG (VisRAG) employs a VLM-based retriever and generator to directly process the document page's image, thereby preserving all information in the original page.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2410_10594v1_0.png",
+    "url": ""
+  },
+  "2410_10594v1_1": {
+    "caption": "Average retrieval performance of VisRAG-Ret vs. MiniCPM (OCR) trained with different numbers of training examples.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2410_10594v1_1.png",
+    "url": ""
+  },
+  "2410_10594v1_2": {
+    "caption": "Relative retrieval and generation performance of VisRAG, VisRAG(SigLIP), and TextRAG on different subsets of queries.\nThe X-axes represent the query subsets where the lengths of the positive documents fall within specific percentile ranges.\nFor comparative analysis, we set TextRAG's performance to zero and show the performance differences of other models from TextRAG.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2410_10594v1_2.png",
+    "url": ""
+  },
+  "2410_10594v1_3": {
+    "caption": "Pipeline performance of (a) \\baseline{} and (b) \\ours{} on InfographicsVQA. We visualize the portion of queries that have the positive document retrieved at the top-$1$ position (``Correct Retrieval''), and that are answered correctly given the top-$1$ retrieved document (``Correct Generation'').",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2410_10594v1_3.png",
+    "url": ""
+  },
+  "2404_00236v2_0": {
+    "caption": "Model Architecture of the proposed LoID.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2404_00236v2_0.png",
+    "url": ""
+  },
+  "2407_15268v1_0": {
+    "caption": "Retrieval evaluation of FactMM-RAG with different F1CheXbert and F1RadGraph thresholds.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2407_15268v1_0.png",
+    "url": ""
+  },
+  "2407_15268v1_1": {
+    "caption": "F1CheXbert Threshold: 0.0",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2407_15268v1_1.png",
+    "url": ""
+  },
+  "2407_15268v1_2": {
+    "caption": "F1CheXbert Threshold: 1.0",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2407_15268v1_2.png",
+    "url": ""
+  },
+  "2407_16364v2_0": {
+    "caption": "Pipeline of TextHarmony. TextHarmony generates both textual and visual content by concatenating a vision encoder, an LLM, and an image decoder. The proposed Slide-LoRA module mitigates the problem of inconsistency in multi-modal generation by partially separating the parameter space.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2407_16364v2_0.png",
+    "url": ""
+  },
+  "2407_16364v2_1": {
+    "caption": "Captions from DetailedTextCaps-100K and MARIO-LAION for the same image. DetailedTextCaps-100K can better depict the textual elements in the image.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2407_16364v2_1.png",
+    "url": ""
+  },
+  "2410_12787v1_0": {
+    "caption": "Language Dominance.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2410_12787v1_0.png",
+    "url": ""
+  },
+  "2410_12787v1_1": {
+    "caption": "Visual Dominance.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2410_12787v1_1.png",
+    "url": ""
+  },
+  "2410_12787v1_2": {
+    "caption": "Audio Dominance.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2410_12787v1_2.png",
+    "url": ""
+  },
+  "2410_23166v1_0": {
+    "caption": "The pipeline of constructing the literature database.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2410_23166v1_0.png",
+    "url": ""
+  },
+  "2410_23166v1_1": {
+    "caption": "Three pipelines for idea proposal.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2410_23166v1_1.png",
+    "url": ""
+  },
+  "2410_23123v1_0": {
+    "caption": "\\small  \\kk data generation framework employs abstract and natural language modules to generate question answer pair and synthetic CoTs for each \\kk sample, based on the problem specification: number of persons ($N$), tree width ($W$), and depth ($D$). Perturbers in these modules can alter the math structure and language description, respectively.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2410_23123v1_0.png",
+    "url": ""
+  },
+  "2410_23123v1_1": {
+    "caption": "Transferability of 1$k$/10$k$ 8-ppl FTed \\gptfouromini. \\llamathree results are in \\cref{fig:llama-10k-8ppl",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2410_23123v1_1.png",
+    "url": ""
+  },
+  "2410_23123v1_2": {
+    "caption": "Transferability of \\llamathree  Direct-FTed  on 1$k$/10$k$ samples at different epochs.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2410_23123v1_2.png",
+    "url": ""
+  },
+  "2410_23123v1_3": {
+    "caption": "Length distributions of \\kk training data.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2410_23123v1_3.png",
+    "url": ""
+  },
+  "2410_22394v1_0": {
+    "caption": "The input context length scaling trend on the~\\protect\\ColoredEQ~task",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2410_22394v1_0.png",
+    "url": ""
+  },
+  "2410_22394v1_1": {
+    "caption": "The input-output illustration of four tasks in the proposed AAAR-1.0 benchmark.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2410_22394v1_1.png",
+    "url": ""
+  },
+  "2412_04455v1_0": {
+    "caption": "Constraint Element Pipeline. Given a constraint, our model {\\mname} generates instance-level and part-level masks across multiple views, which are projected into 3D space. \n\u00a0 \u00a0%\n\u00a0 \u00a0Through a series of heuristics, the desired elements are produced. Once all elements are obtained, they are annotated onto the original multi-view images. Here we display the annotation result of one element.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2412_04455v1_0.png",
+    "url": ""
+  },
+  "2412_04455v1_1": {
+    "caption": "{\\mname} architecture. Here we display the part-level segmentation, which will output the desired element type and mask.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2412_04455v1_1.png",
+    "url": ""
+  },
+  "2412_04426v1_0": {
+    "caption": "Comparison of online finetuning performance after VPA with two different initial values of the Lagrange multiplier. In `VPA w/o init', the initial value is set to 0, whereas we initialize Lagrange multipliers with a good value found empirically (0.65 in BallCircle and 0.5 in CarRun) in `VPA w/ init'. The multiplier is then updated using the standard dual ascent method.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2412_04426v1_0.png",
+    "url": ""
+  },
+  "2412_04426v1_1": {
+    "caption": "Performance comparison between Marvel and baseline methods in multiple environments. It is clear that Marvel can quickly find a high-return policy while keeping the cost below the limit.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2412_04426v1_1.png",
+    "url": ""
+  },
+  "2412_04380v1_0": {
+    "caption": "\\textbf{Framework of our EmbodiedOcc for embodied 3D occupancy prediction.}\nWe maintain an explicit global memory of 3D Gaussians during the exploration of the current scene.\nFor each update, the Gaussians within the current frustum are taken from the memory and updated using\nsemantic and structural features extracted from the monocular RGB input.\nEach Gaussian has a confidence value to determine the degree of this update.\nThen we detach and put these updated Gaussians back into the memory.\nDuring the continuous exploration, we can obtain the current 3D occupancy prediction using a Gaussian-to-voxel splatting module whenever we need.\n}",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2412_04380v1_0.png",
+    "url": ""
+  },
+  "2412_04380v1_1": {
+    "caption": "\\textbf{Illustration of our Gaussian memory and confidence refinement.}\nDuring each update, the Gaussians within the current frustum are taken from the memory and updated according to their tags \\(\\Gamma\\).\nConfidence values of those well-updated Gaussians are set to a certain value between \\(0\\) and \\(1\\),\nwhile others set to 0.\nThe former will be updated slightly and the latter efficiently.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2412_04380v1_1.png",
+    "url": ""
+  },
+  "2412_04323v1_0": {
+    "caption": "Robust adaptation module used by GRAM at deployment time. Left: Epistemic neural network $\\phi$ outputs a sample mean and variance of latent feature estimates for a history $h_t$, which are used to calculate $\\phi_{\\textnormal{GRAM}}$ in \\eqref{eq:ra_module}. Right: In ID contexts, variance of latent feature estimates will be low and $\\phi_{\\textnormal{GRAM}}$ will be close to the mean estimate. In OOD contexts with different environment dynamics, variance will be high and $\\phi_{\\textnormal{GRAM}}$ will output an estimate close to $z_{\\textnormal{rob}}$.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2412_04323v1_0.png",
+    "url": ""
+  },
+  "2412_04323v1_1": {
+    "caption": "Joint RL training pipeline used by GRAM, which combines standard ID data collection and adversarial OOD data collection for every RL update. Training environments are assigned to \\emph{ID training} or \\emph{OOD training} at each iteration, and assignments alternate between iterations.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2412_04323v1_1.png",
+    "url": ""
+  },
+  "2412_04309v1_0": {
+    "caption": "In the \\tile, the ranking scores that put all no-skill performances on an equal footing are along a curve $\\tileCurvePriors$ between $\\scoreNPV$ (upper-left corner) and $\\scorePPV$ (lower-right corner) when the class priors $\\aPerformance(\\randVarGroundtruthClass)$ are fixed, and along a curve $\\tileCurveRates$ between $\\scoreTNR$ (lower-left corner) and $\\scoreTPR$ (upper-right corner) when the rates of predictions $\\aPerformance(\\randVarPredictedClass)$ are fixed. The pink curves correspond to the constraints $\\priorneg=0.7$ (on the left) and $\\rateneg=0.7$ (on the right).",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2412_04309v1_0.png",
+    "url": ""
+  },
+  "2412_04309v1_1": {
+    "caption": "In the \\tile, the ranking scores that put all no-skill performances on an equal footing are along a curve $\\tileCurvePriors$ between $\\scoreNPV$ (upper-left corner) and $\\scorePPV$ (lower-right corner) when the class priors $\\aPerformance(\\randVarGroundtruthClass)$ are fixed, and along a curve $\\tileCurveRates$ between $\\scoreTNR$ (lower-left corner) and $\\scoreTPR$ (upper-right corner) when the rates of predictions $\\aPerformance(\\randVarPredictedClass)$ are fixed. The pink curves correspond to the constraints $\\priorneg=0.7$ (on the left) and $\\rateneg=0.7$ (on the right).",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2412_04309v1_1.png",
+    "url": ""
+  },
+  "2412_04309v1_2": {
+    "caption": "\\tiles showing the Kendall rank correlation coefficient $\\tau$ for $\\scoreBalancedAccuracy$ (left) and $\\scoreCohenKappa$ (right), for a uniform distribution of performances $\\aPerformance$ such that $\\priorneg=0.7$. The correlation values have been estimated based on $10,000$ performances drawn at random.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2412_04309v1_2.png",
+    "url": ""
+  },
+  "2412_04309v1_3": {
+    "caption": "\\tiles showing the Kendall rank correlation coefficient $\\tau$ for $\\scoreBalancedAccuracy$ (left) and $\\scoreCohenKappa$ (right), for a uniform distribution of performances $\\aPerformance$ such that $\\priorneg=0.7$. The correlation values have been estimated based on $10,000$ performances drawn at random.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2412_04309v1_3.png",
+    "url": ""
+  },
+  "2412_04180v1_0": {
+    "caption": "Our SKIM method adaptively quantizes the model to any specified bit and achieves superior performance. The perplexity reported is of LLaMA-7B on the WikiText2 dataset.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2412_04180v1_0.png",
+    "url": ""
+  },
+  "2412_04180v1_1": {
+    "caption": "Histogram of the channel-wise quantization error for the $self\\_attn.q\\_proj$ in the second layer of Llama-7B. Errors vary significantly and exhibits a long-tail distribution on the larger side.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2412_04180v1_1.png",
+    "url": ""
+  },
+  "2412_04147v1_0": {
+    "caption": "Example of an AI-driven smart office.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2412_04147v1_0.png",
+    "url": ""
+  },
+  "2412_04147v1_1": {
+    "caption": "System architecture of a multi-device cascade~\\cite{multitasc2023iscc}.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2412_04147v1_1.png",
+    "url": ""
+  },
+  "2412_03993v1_0": {
+    "caption": "Overview of \\attackname.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2412_03993v1_0.png",
+    "url": ""
+  },
+  "2412_03993v1_1": {
+    "caption": "The number of images contained in each category of LaserMark. \n\u00a0 \u00a0 Image categories refer to \\url{https://cg.cs.tsinghua.edu.cn/traffic-sign}.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2412_03993v1_1.png",
+    "url": ""
+  },
+  "2412_03938v1_0": {
+    "caption": "Overview of our framework.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2412_03938v1_0.png",
+    "url": ""
+  },
+  "2412_03938v1_1": {
+    "caption": "An example of Solidity smart contracts.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2412_03938v1_1.png",
+    "url": ""
+  },
+  "2412_03800v1_0": {
+    "caption": "Overview of our approach. The life long intrinsic reward of a state \u00a0$\\mathbf{s}$ (the {\\color{green}green} node) is computed as the distance to its $k$ nearest neighbors, measured in representations space obtained from a fixed neural encoder. The episodic intrinsic reward is calculated as the average state entropy of these episodes including the state. The lifelong reward is then combined with episodic reward. A separate DRL is introduced for a policy that maximizes expected reward.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2412_03800v1_0.png",
+    "url": ""
+  },
+  "2412_03800v1_1": {
+    "caption": "Episodic entropy maximization encourages movement in a single direction to capture more distinct states per episode. Deviating from this direction will result in smaller distances to the previously visited states within the same episode. Lifelong motivation discourages revisiting episodes, hindering a continual exploration towards one direction. ELEMENTs shares merits of both, promoting comprehensive exploration without confinement to one direction.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2412_03800v1_1.png",
+    "url": ""
+  },
+  "2401_02385v2_0": {
+    "caption": "The pre-training stages and specialization pipeline of TinyLlama v1.1.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2401_02385v2_0.png",
+    "url": ""
+  },
+  "2401_02385v2_1": {
+    "caption": "Training Loss for TinyLlama v1.1 models.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2401_02385v2_1.png",
+    "url": ""
+  },
+  "2306_08543v4_0": {
+    "caption": "The scaling law of teacher based on the GPT-2 family models. We compare MiniLLM and SeqKD with GPT-2-125M as the student and GPT-2 340M, 760M, and 1.5B as teachers.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2306_08543v4_0.png",
+    "url": ""
+  },
+  "2306_08543v4_1": {
+    "caption": "The excess error caused by the training-decoding discrepancy (ExAccErr) accumulated with the generation length. Lower ExAccErr means the method introduces less exposure bias.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2306_08543v4_1.png",
+    "url": ""
+  },
+  "2306_08543v4_2": {
+    "caption": "The Rouge-L scores of the distilled models against SFT on the different subsets of S-NI split by the golden responses' length.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2306_08543v4_2.png",
+    "url": ""
+  },
+  "2306_08543v4_3": {
+    "caption": "The toy experiment. We fit a Gaussian mixture distribution with a single Gaussian distribution using \\textit{forward} KLD and \\textit{reverse} KLD.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2306_08543v4_3.png",
+    "url": ""
+  },
+  "2310_06694v2_0": {
+    "caption": "\\textit{Targeted structured pruning} produces a compact and dense model of a pre-specified shape. Light colors indicate pruned substructures. Masking variables $z$ are learned to control whether a substructure is pruned ($z=0$) or retained ($z=1$). ",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2310_06694v2_0.png",
+    "url": ""
+  },
+  "2310_06694v2_1": {
+    "caption": "Loss difference between the pruned model (1.3B) and estimated reference loss, with original vs. dynamic batch loading.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2310_06694v2_1.png",
+    "url": ""
+  },
+  "2403_03853v3_0": {
+    "caption": "Performance of removing certain layer from LLMs. We can see that certain layers are redundant, and their removal results in minimal performance degradation. ",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2403_03853v3_0.png",
+    "url": ""
+  },
+  "2403_03853v3_1": {
+    "caption": "The BI score of a layer and the PPL after removing the layer. ",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2403_03853v3_1.png",
+    "url": ""
+  },
+  "2310_02635v4_0": {
+    "caption": "An example of how human solves tasks under the policy, value, and success-reward prior knowledge. The proposed Reinforcement Learning from Foundation Priors framework utilizes the corresponding foundation models to acquire prior knowledge.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2310_02635v4_0.png",
+    "url": ""
+  },
+  "2310_02635v4_1": {
+    "caption": "The overview of Foundation-guided Actor-Critic. In FAC, rewards are derived from foundation success rewards and value shaping. Besides policy gradient updates, the actor is trained using prior policy regularization and success trajectory imitation.}\n",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2310_02635v4_1.png",
+    "url": ""
+  },
+  "2409_12384v1_0": {
+    "caption": "The framework of our differentially private data-free distillation approach. It aims to train a privacy-preserving student model $\\textbf{S}$ with teacher-student learning. First, a teacher $\\textbf{T}$ is well trained on private data and serves as a fixed discriminator to pre-train a generator $\\textbf{G}$ in a data-free manner. Then, massive synthetic data is generated from noisy code $\\textbf{z}$ with the generator and fed into the teacher and student $\\textbf{S}$ to query differentially private labels with selective randomized response. Finally, with the synthetic data and noisy labels, the student is trained by regressing the teacher knowledge. In this way, both the data privacy and label privacy are well protected in a unified framework, leading to a privacy-preserving student model $\\textbf{S}$\ndoing the distillation with final labels and outputs of student. In the selective randomized response, we use the output of the student model combined with a threshold $t$ to reduce the number of possible labels and obtain $I$. We implement $\\varepsilon$-DP with return $RR_\\varepsilon(I, \\mathbf{y}_t)$ if correct label in $I$ and $Uniform(I)$ if correct label not in $I$.\n",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2409_12384v1_0.png",
+    "url": ""
+  },
+  "2409_12384v1_1": {
+    "caption": "The effect of different amount of synthetic data ($\\varepsilon$=1).",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2409_12384v1_1.png",
+    "url": ""
+  },
+  "2409_12384v1_2": {
+    "caption": "The effect of different number of stages ($\\varepsilon$=10).",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2409_12384v1_2.png",
+    "url": ""
+  },
+  "2410_19134v1_0": {
+    "caption": "T-SNE visualizations of LLM's output from speech and text input. (a) Align before LLM Decoding. (b) Align after LLM Decoding.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2410_19134v1_0.png",
+    "url": ""
+  },
+  "2410_19134v1_1": {
+    "caption": "The framework of AlignCap. \\textbf{Left:} Illustration of Knowledge Distillation Regularization. Acoustic prompt \\textbf{P}$_{\\mathrm{act}}$ is generated from emotional clues, which is extracted by an emotion grammar parser \\textbf{G}$_{\\mathrm{parser}}$. Semantic prompt \\textbf{P}$_{\\mathrm{sem}}$ is generated from LLM tokenizer. \\textbf{Right:} Illustration of Preference Optimization Regularization.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2410_19134v1_1.png",
+    "url": ""
+  },
+  "2410_02324v1_0": {
+    "caption": "Overview of our proposed methods. From left to right: \\texttt{Tone2Vec} module for representations, Transcription module for automated tone transcription, and Clustering module for clustering tonal data.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2410_02324v1_0.png",
+    "url": ""
+  },
+  "2410_02324v1_1": {
+    "caption": "\\textbf{Left}: Visual simulations using transcription sequences \\( l_{1} \\) = \\texttt{(55)} (green linear curve), \\( l_{2} \\) = \\texttt{(41)} (red linear curve), and \\( l_{3} \\) = \\texttt{(312)} (blue quadratic curve). Grey shading denotes the area between \\texttt{(41)} and \\texttt{(312)}. \\textbf{Right}: The number 2.27 with grey shading represents the calculated distance between \\texttt{(41)} and \\texttt{(312)}.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2410_02324v1_1.png",
+    "url": ""
+  },
+  "2401_07301v2_0": {
+    "caption": "Two self-correction methods are demonstrated in language models in response to a query. The gray line on the left illustrates the process of self-correction employing prompt engineering in large language models like ChatGPT. The red line shows the overall steps of our proposed Intrinsic Self-Correction, where self-verification and self-modification occur spontaneously.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2401_07301v2_0.png",
+    "url": ""
+  },
+  "2401_07301v2_1": {
+    "caption": "The pipeline of constructing self-correction data.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2401_07301v2_1.png",
+    "url": ""
+  },
+  "2411_13226v1_0": {
+    "caption": "Overview of AIDBench.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2411_13226v1_0.png",
+    "url": ""
+  },
+  "2411_13226v1_1": {
+    "caption": "The RAG-based method for long context.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2411_13226v1_1.png",
+    "url": ""
+  },
+  "2411_04118v1_0": {
+    "caption": "Medical LLMs and VLMs trained via domain-adaptive pretraining (DAPT) show limited improvement over their general-domain counterparts. (a) Overview of our head-to-head evaluation approach for each pair of general-domain (\\textcolor{cyan}{blue}) and medically adapted LLM/VLM (\\textcolor{red}{red}).",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2411_04118v1_0.png",
+    "url": ""
+  },
+  "2411_04118v1_1": {
+    "caption": "(b) Win/tie/loss rate (\\%) of medical models vs. their corresponding base models across all (model pair, QA dataset) combinations. \n    Win rate refers to the proportion of (model pair, QA dataset) combinations where a medical model shows a statistically significant improvement.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2411_04118v1_1.png",
+    "url": ""
+  },
+  "2411_04118v1_2": {
+    "caption": "Optimizing the prompt for only the medical model and comparing models without accounting for statistical uncertainty can overestimate the performance improvements from medical DAPT. We show the win/tie/loss rate (\\%) of medical models vs. their base models across all (model pair, QA dataset) combinations, when (a) independently optimizing the prompt for each model and performing statistical testing, (b) optimizing the prompt only for the medical model and performing statistical testing, (c) independently optimizing the prompt for each model without statistical testing, and (d) optimizing the prompt only for the medical model without statistical testing. ",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2411_04118v1_2.png",
+    "url": ""
+  },
+  "2402_18649v1_0": {
+    "caption": "Overview of Compositional LLM Systems.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2402_18649v1_0.png",
+    "url": ""
+  },
+  "2402_18649v1_1": {
+    "caption": "When LLM outputs external markdown image links and transmits the links to the Frontend, the Frontend will automatically render it no matter the content.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2402_18649v1_1.png",
+    "url": ""
+  },
+  "2405_14744v2_0": {
+    "caption": "CogMir Framework. The framework is structured around four essential objects: \"humans,\" LLM Agents, data, and discriminators. These objects interact within the framework to facilitate Q\\&A and Multi-Human-LLM Agent (Multi-H-A) interactions to mirror social science experimental settings and evaluations. CogMir features two communication modes and five Multi-H-A interaction combinations, enabling varied configurations to suit diverse social experimental needs. CogMir offers mirror cognitive bias samples (Fig.~\\ref{fig:overview}) and dynamic use cases open for expansion.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2405_14744v2_0.png",
+    "url": ""
+  },
+  "2405_14744v2_1": {
+    "caption": "Left: Authority Effect $Rate_{Baq}$ on unknown ($U$) and known ($K$) MCQ datasets. Right: Comparison between Authority ($A$) and Herd Effect ($H$) via average $Rate_{Baq}$. ",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2405_14744v2_1.png",
+    "url": ""
+  },
+  "2310_05914v2_0": {
+    "caption": "AlpacaEval Win Rate percentage for \\llama{}-2-7B models finetuned on various datasets with and without \\neftune{}. \\neftune{} leads to massive performance boosts across all of these datasets, showcasing the increased conversational quality of the generated answers.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2310_05914v2_0.png",
+    "url": ""
+  },
+  "2310_05914v2_1": {
+    "caption": "\\texttt{AlpacaEval} Win Rate with and without \\neftune{} on \\llama{}-2, \\llama{}-1, and OPT across Alpaca, Evol-Instruct, ShareGPT and OpenPlatypus datasets. Performance improves across different datasets and models with ChatGPT as the evaluator.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2310_05914v2_1.png",
+    "url": ""
+  },
+  "2311_07064v3_0": {
+    "caption": "Five examples of ground truth prompts $\\bp^*$ and corresponding ``evil twins'' $\\bp$. Each evil twin is found by solving the maximum-likelihood problem \\eqref{eq:mle-def-intro} on 100 documents generated from the ground truth prompt. We compare the evil twins to a baseline created by asking GPT-4 to generate a prompt that could have created the 100 documents. Surprisingly, the optimized prompts, although incoherent, are more functionally similar to the ground truth prompt (lower KL divergence) than the GPT-4 reconstruction. Details are in Section~\\ref{sec:methods-comparison}. Figure~\\ref{fig:full-kl-results} in the appendix contains a full table of results.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2311_07064v3_0.png",
+    "url": ""
+  },
+  "2311_07064v3_1": {
+    "caption": "Win rate between various methods across optimizations of 100 ground truth prompts with 100 documents each. Given two prompts to compare, we compute the KL divergence for both prompts with respect to the ground truth, and the method with lower KL wins. Darker shades indicate ROW method is better than COLUMN method. Full optimization results are shown in Appendix~\\ref{app:recon-examples}. In the case of ties, the win is shared by both methods. The most effective method is GCG with warm starts.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2311_07064v3_1.png",
+    "url": ""
+  },
+  "2305_18153v2_0": {
+    "caption": "Know-Unknow Quadrant. The horizontal axis represents the model's memory capacity for knowledge, and the vertical axis represents the model's ability to comprehend and utilize knowledge.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2305_18153v2_0.png",
+    "url": ""
+  },
+  "2305_18153v2_1": {
+    "caption": "Comparison between the davinci series and human self-knowledge in instruction input form.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2305_18153v2_1.png",
+    "url": ""
+  },
+  "2406_12809v1_0": {
+    "caption": "A hard-to-easy inconsistency case of LLMs. A counter-intuitive phenomenon occurs when an LLM, which can solve a harder problem, surprisingly goes wrong on an easier problem.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2406_12809v1_0.png",
+    "url": ""
+  },
+  "2406_12809v1_1": {
+    "caption": "The hard data collection process of ConsisEval. An easy datum is fed into GPT-4 with a well-designed prompt and multiple hard data candidates are sampled. Human annotators select the one of best quality, then check and revise the sample to make it fit our criteria.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2406_12809v1_1.png",
+    "url": ""
+  },
+  "2410_03197v1_0": {
+    "caption": " Questions generated by mT5 \\cite{xue2021mt5} and mBART \\cite{liu2020multilingual} fine-tuned on English QA datasets. The questions often contain English interrogative expressions such as ``How long'' and ``When did.''",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2410_03197v1_0.png",
+    "url": ""
+  },
+  "2410_03197v1_1": {
+    "caption": "Overview of our proposed method: The QG model generates questions utilizing the question exemplars corresponding to the question type determined by the QTC model.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2410_03197v1_1.png",
+    "url": ""
+  },
+  "2402_15729v3_0": {
+    "caption": "The top section of the chart represents the average CTE for each model across 5 datasets. Below is a real example from the Asdiv dataset using the MAmmoTH-Mistral-7B model, which achieved an accuracy of 93.9\\% on this dataset. The proportion of CTE remains high across various models, and these errors do not diminish with an increase in model parameters.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2402_15729v3_0.png",
+    "url": ""
+  },
+  "2402_15729v3_1": {
+    "caption": "Dense Attention refers to traditional Attention, while Focus Attention is our approach. In the orange column on the left, the first four tokens share a consistent mask state of 1. On the right side of the figure, there is a comparison between human and LLMs in solving mathematical problems.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2402_15729v3_1.png",
+    "url": ""
+  },
+  "2402_04437v5_0": {
+    "caption": "Illustration of the structured entity extraction task. Given a text description as well as some predefined schema containing all the candidates of entity types and property keys, our task aims to output a structured json for all entities in the text with their information.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2402_04437v5_0.png",
+    "url": ""
+  },
+  "2402_04437v5_1": {
+    "caption": "The pipeline of our proposed MuSEE model, which is built on an encoder-decoder architecture. The input text only needs to be encoded once. The decoder is shared for all the three stages. All predictions within each stage can be processed in batch, and teacher forcing enables parallelization even across stages during training.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2402_04437v5_1.png",
+    "url": ""
+  },
+  "2410_12432v1_0": {
+    "caption": "Given a single eye-in-hand camera input and the language instruction to perform a task, we introduce \\textbf{Imagine2Servo}, a pipeline that generates intermediate goal images, which are then used by the Image-Based Visual Servoing (IBVS) controller to reach a target location. We show the application of our pipeline to long-range navigation as well as manipulation tasks.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2410_12432v1_0.png",
+    "url": ""
+  },
+  "2410_12432v1_1": {
+    "caption": "Our method alternates between generating sub-goals using a diffusion-based foresight model and executing actions with a flow-based IBVS controller. The foresight model, conditioned on the current monocular eye-in-hand camera input and any available scene observations, translates images to guide the task. The RTVS visual servoing controller predicts 6 DOF actions to reach each intermediate goal, repeating the loop until the task is completed.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2410_12432v1_1.png",
+    "url": ""
+  },
+  "2411_10428v1_0": {
+    "caption": "A cutaway of the top portion of the BICEP3 cryostat. Displayed from top to bottom are the forebaffles, BOPP membrane (to contain warm circulated air above the window), thin HMPE window, HD30 IR foam filter stack, alumina IR filter, alumina objective lens, and first nylon IR filter. The rest of the cryostat is described in Figure 6 of \\cite{bicep3}. The thin HMPE window in this model is deflected 75 mm, with the foam filters remaining 45 mm away from the window.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2411_10428v1_0.png",
+    "url": ""
+  },
+  "2411_10428v1_1": {
+    "caption": "Photo of the window at the highest pressure achieved during the hydrostatic test. The pressure gauge (center right) reads approximately 85 psi (5.7 atm), and there is water leaking out around the gasket seal on the left hand side.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2411_10428v1_1.jpg",
+    "url": ""
+  },
+  "2411_09729v1_0": {
+    "caption": "Scheme of the LVM-dap analysis flow for a single fiber spectrum, including the main procedures: (i) derivation of the non-linear parameters of the stellar spectrum (v$_\\star$, $\\sigma_\\star$ and A$_{\\rm V,\\star}$), (ii) parametric derivation of the properties of the ionized gas emission lines { (EL), including the flux intensity (f$_{\\rm EL}$), velocity (v$_{\\rm EL}$) and velocity dispersion ($\\sigma_{\\rm EL}$)}, (iii) stellar component synthesis, i.e., decomposition into a set of RSP templates and finally (iv) non-parametric derivation of the properties of the emission lines, including the equivalent width for each emission line (EW$_{\\rm EL}$). { RND and LM stands for the two methods included in \\pyf\\ to fit the parametric models to the EL, as explained in the text.}",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2411_09729v1_0.png",
+    "url": ""
+  },
+  "2411_09729v1_1": {
+    "caption": "Probability distribution function of the physical properties of stars (T$_{eff}$, log($g$), [Fe/H] and [$\\alpha$/Fe]) for the full template comprising 108 RSPs (black contours), together with the same distribution for three selected RSPs within the template (colour contours) shown in Fig. \\ref{fig:MaStar_spec}. Each panel shows the PDFs for a pair of physical properties: T$_{eff}$-log($g$) (top-left); [Fe/H]-log($g$) (top-right); T$_{eff}$-[$\\alpha$/Fe] (bottom-left) and [$\\alpha$/Fe]-[Fe/H] (bottom-right). \u00a0In each panel each successive contour corresponds approximately to 1, 2, and 3$\\sigma$.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2411_09729v1_1.png",
+    "url": ""
+  },
+  "2411_11098v1_0": {
+    "caption": "\\textbf{MolParser} uses an end-to-end transformer to extract the chemical structures to string expression from the real patent or literature. We extend the SMILES format to enable the representation of more complex molecular structures including Markush.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2411_11098v1_0.png",
+    "url": ""
+  },
+  "2411_11098v1_1": {
+    "caption": "Comparison of molecular expressions.} Our extended SMILES is able to express more complex Markush structures.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2411_11098v1_1.png",
+    "url": ""
+  },
+  "2411_11641v1_0": {
+    "caption": "The overall workflow of the proposed TSINR method. The INR tokens predicted by the transformer encoder are the parameters of the INR continuous function. And the input of the INR continuous function is the timestamp $t$.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2411_11641v1_0.png",
+    "url": ""
+  },
+  "2411_11641v1_1": {
+    "caption": "The visualization of the ground-truth anomalies and anomaly scores of TSINR for different types of anomalies.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2411_11641v1_1.png",
+    "url": ""
+  },
+  "2411_12736v1_0": {
+    "caption": "Pipeline of ACING.} In each iteration, a soft prompt along with several examples of the target task are provided to the white-box LLM to generate an instruction. This instruction is then used to query the black-box LLM, which produces answers to the target task queries. The resulting score is returned to the agent as a reward, which is used to update its networks and adjust its policy. Both LLMs remain frozen throughout the process.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2411_12736v1_0.png",
+    "url": ""
+  },
+  "2411_12736v1_1": {
+    "caption": "small Illustration of the prompt generation and testing inside the environment.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2411_12736v1_1.png",
+    "url": ""
+  },
+  "2411_12640v1_0": {
+    "caption": "Structure of Leadsee-Precip. The model consists of feature extraction, hidden translator, and precipitation upsampling.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2411_12640v1_0.png",
+    "url": ""
+  },
+  "2411_12640v1_1": {
+    "caption": "An illustrative example of a global 6-hour accumulated precipitation prediction generated by Leadsee-Precip and the ground truth of NOAA CMORPH. The calendar time-stamp of the figure was 00:00 UTC on April 1, 2022.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2411_12640v1_1.png",
+    "url": ""
+  },
+  "2411_12589v1_0": {
+    "caption": "Hierarchical clustering tree showing the grouping of token relevance maps for all tokens in a latent layer of the Vision Transformer, not limited to the \\texttt{CLS} token. Each leaf node represents a single token relevance map, while higher-level nodes show aggregated clusters based on a clustering threshold $( \\zeta)$, which controls the level of detail. Lower $\\zeta$ values reveal finer details, while higher values create broader, more general clusters. This approach demonstrates how pre-trained Vision Transformers can perform unsupervised semantic segmentation, identifying meaningful patterns within token representations without requiring additional training or fine-tuning.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2411_12589v1_0.png",
+    "url": ""
+  },
+  "2411_12589v1_1": {
+    "caption": "ULTra segmentation results on sample images. The top row displays the original images, the middle row shows ground-truth annotations, and the bottom row presents our model\u2019s predictions.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2411_12589v1_1.png",
+    "url": ""
+  },
+  "2411_12556v1_0": {
+    "caption": "The overview of the proposed UMGAD. There are three interaction types in the multiplex heterogeneous graph: U-P-U links users reviewing at least one product, U-S-U link users having at least one identical star rating within a week, U-V-U links linguistically similar users.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2411_12556v1_0.png",
+    "url": ""
+  },
+  "2411_12556v1_1": {
+    "caption": "Amazon (\\#anomalies: 821)",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2411_12556v1_1.png",
+    "url": ""
+  },
+  "2411_12556v1_2": {
+    "caption": "YelpChi (\\#anomalies: 6674)",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2411_12556v1_2.png",
+    "url": ""
+  },
+  "2411_12276v1_0": {
+    "caption": "Coverage of the \\texttt{libcll} Toolkit: This figure provides an overview of the key components included in the \\texttt{libcll} toolkit, which encompasses 15 datasets spanning synthetic and real-world scenarios, 5 commonly used models in Complementary Label Learning (CLL), 4 CLL assumptions, and 14 CLL algorithms. To the best of our knowledge, \\texttt{libcll} is the first comprehensive toolkit specifically dedicated to CLL.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2411_12276v1_0.png",
+    "url": ""
+  },
+  "2411_12276v1_1": {
+    "caption": "The development of complementary-label learning.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2411_12276v1_1.png",
+    "url": ""
+  },
+  "2405_07508v1_0": {
+    "caption": "Research Framework",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2405_07508v1_0.png",
+    "url": ""
+  },
+  "2405_07508v1_1": {
+    "caption": "Repository features over time of Adobe/Bracket",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2405_07508v1_1.png",
+    "url": ""
+  },
+  "2405_07508v1_2": {
+    "caption": "HomeWork",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2405_07508v1_2.png",
+    "url": ""
+  },
+  "2405_07508v1_3": {
+    "caption": "Discord-Themes",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2405_07508v1_3.png",
+    "url": ""
+  },
+  "2405_07508v1_4": {
+    "caption": "shattered-pixel-dungeon-gdx",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2405_07508v1_4.png",
+    "url": ""
+  },
+  "2411_05007v1_0": {
+    "caption": "\\looseness=-1 Computation \\versus parameters for LLMs and diffusion models. LLMs' computation is measured with 512 context and 256 output tokens, and diffusion models' computation is for a single step. Dashed lines show trends.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2411_05007v1_0.png",
+    "url": ""
+  },
+  "2411_05007v1_1": {
+    "caption": "First 64 singular values of $\\mW$, $\\hat{\\mW}$, and $\\mR$. The first 32 singular values of $\\hat{\\mW}$ exhibit a steep drop, while the remaining values are much more gradual.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2411_05007v1_1.png",
+    "url": ""
+  },
+  "2411_05007v1_2": {
+    "caption": "Example value distribution of inputs and weights in PixArt-$\\Sigma$. $\\vlambda$ is the smooth factor. Red indicates the outliers. Initially, both the input $\\mX$ and weight $\\mW$ contain significant outliers. After smoothing, the range of $\\hat{\\mX}$ is reduced with much fewer outliers, while $\\hat{\\mW}$ shows more outliers. Once the SVD low-rank branch $\\mL_1\\mL_2$ is subtracted, the residual $\\mR$ has a narrower range and is free from outliers.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2411_05007v1_2.png",
+    "url": ""
+  },
+  "2411_05001v1_0": {
+    "caption": "Discrete tokenizers used for visual pre-processing induce ``visual languages'' made up of sentences containing 1-D sequences of discrete tokens extracted from the images in a dataset. In this paper, we explore how the statistics of these ``visual languages'' differ from ``natural languages,'' and understand the implications of such statistical differences.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2411_05001v1_0.png",
+    "url": ""
+  },
+  "2411_05001v1_1": {
+    "caption": "Parse tree non-terminal node frequencies",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2411_05001v1_1.png",
+    "url": ""
+  },
+  "2411_05001v1_2": {
+    "caption": "Example parse trees for different datasets.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2411_05001v1_2.png",
+    "url": ""
+  },
+  "2411_04998v1_0": {
+    "caption": "\\textbf{Our dataset generation pipeline.}\nWe develop a dataset generation pipeline consisting of five stages to create HourVideo. \nWe leverage over \\textit{800 hours of human effort} in total corresponding to Video curation (Stage 1), \\QAW Refinement using Human Feedback (Stage 3) and Expert MCQ Refinement (Stage 5) stages.\nWe use LLMs for \\QAW Generation (Stage 2), \\QAW Refinement using Human Feedback (Stage 3) and Blind Filtering (Stage 4).\nWe note that causal, counterfactual and navigation questions are manually generated by human experts (See Sec. \\ref{sec:dataset_generation_pipeline} for details).",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2411_04998v1_0.png",
+    "url": ""
+  },
+  "2411_04998v1_1": {
+    "caption": "\\textbf{Dataset Statistics.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2411_04998v1_1.png",
+    "url": ""
+  },
+  "2411_04989v1_0": {
+    "caption": "\\textbf{Semantic correspondences in video diffusion models.}\nWe analyze feature maps in the image-to-video diffusion model SVD~\\citep{blattmann2023stable} for three generated video sequences (row 1). \nWe use PCA to visualize the features at diffusion timestep 30 (out of 50) at the output of an upsampling block (row 2), a self-attention layer (row 3), and the same self-attention layer after our alignment procedure (row 4). %\nAlthough output feature maps of upsampling blocks in image diffusion models are known to encode semantic information ~\\citep{tang2023emergent}, we only observe weak semantic correspondences across frames in SVD. \nThus, we focus on the self-attention layer and modify it to produce feature maps that are semantically aligned across frames.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2411_04989v1_0.jpg",
+    "url": ""
+  },
+  "2411_04989v1_1": {
+    "caption": "\\textbf{Overview of the controllable image-to-video generation framework.}\nTo control trajectories of scene elements, we optimize the latent $\\bm{z}_t$ at specific denoising timesteps $t$ of a pre-trained video diffusion model.\nFirst, we extract semantically aligned feature maps from the denoising U-Net to estimate the video layout.\nNext, we enforce cross-frame feature similarity along the bounding box trajectory to drive the motion of each region.\nTo preserve the visual quality of the generated video, a frequency-based post-processing method is applied to retain high-frequency noise of the original latent $\\bm{z}_t$. The updated latent $\\tilde{\\bm{z}}_t$\n\u00a0is input to the next denoising step.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2411_04989v1_1.png",
+    "url": ""
+  },
+  "2411_04987v1_0": {
+    "caption": "\\textbf{Few-shot concept learning.} Given paired task demonstration $\\tau$ ({\\it e.g.}, `walk') and concept $c$ (a latent representation of the task), we train a generative model $\\mathcal{G}_{\\theta}$ to generate behavior from a concept. Then, given demonstrations of a new behavior $\\Tilde{\\tau}$ ({\\it e.g.}, `jumping jacks') without its concept label, we aim to learn its concept representation by optimizing concept $\\Tilde{c}$ as input to frozen $\\mathcal{G}_{\\theta}$.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2411_04987v1_0.png",
+    "url": ""
+  },
+  "2411_04987v1_1": {
+    "caption": "\\textbf{Experiment Domains.} We extensively evaluate our approach for various domains.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2411_04987v1_1.png",
+    "url": ""
+  },
+  "2411_04987v1_2": {
+    "caption": "\\textbf{Object rearrangement (left) and AGENT closed loop (right) quantitative evaluation on training and few-shot novel concept learning.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2411_04987v1_2.png",
+    "url": ""
+  },
+  "2411_04965v1_0": {
+    "caption": "The overview of BitNet a4.8 with both weight and activation quantization. All the parameters are ternery (i.e., 1.58-bit as in BitNet b1.58~\\cite{bitnet2}). We use a hybrid quantization\nand sparsification strategy to deal with outlier activations in certain Transformer sub-layers.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2411_04965v1_0.png",
+    "url": ""
+  },
+  "2411_04965v1_1": {
+    "caption": "Ablations on 4-bit quantizers for the inputs to attention and FFN.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2411_04965v1_1.png",
+    "url": ""
+  },
+  "2411_04946v1_0": {
+    "caption": "3D view optimization trajectory of Peaks function",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2411_04946v1_0.png",
+    "url": ""
+  },
+  "2411_04946v1_1": {
+    "caption": "Top view optimization trajectory of Peaks function",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2411_04946v1_1.png",
+    "url": ""
+  },
+  "2411_04946v1_2": {
+    "caption": "Convergence history of Peaks function",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2411_04946v1_2.png",
+    "url": ""
+  },
+  "2411_04946v1_3": {
+    "caption": "GD",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2411_04946v1_3.png",
+    "url": ""
+  },
+  "2411_04946v1_4": {
+    "caption": "SPGD",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2411_04946v1_4.png",
+    "url": ""
+  },
+  "2411_05564v1_0": {
+    "caption": "OW-DETR$^{++}$ pseudo-labeling pipeline.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2411_05564v1_0.png",
+    "url": ""
+  },
+  "2411_05564v1_1": {
+    "caption": "Samples of OpenDet \\cite{OpenDet} and OW-DETR$^{++}$ detections. Only unknown objects are present in the images. In green (resp. red), box predicted as known (resp. unknown).",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2411_05564v1_1.png",
+    "url": ""
+  },
+  "2411_05443v1_0": {
+    "caption": "The dataset consisting of four clusters $0$ (blue), $1$ (orange), $2$ (green) and $3$ (purple), as described in the text, so that elements of cluster $0$ are distance one from elements from the remaining clusters and the mutual distances between elements of clusters $1, 2, 3$ are two.\n\u00a0 \u00a0 \u00a0 \u00a0 Such a dataset cannot be embedded, with the distances preserved, to any Euclidean space. In this case, UMAP (panel b) fails to capture the global layout, while t-SNE (panel c) and PHATE (panel d) do. However the coordinate systems of t-SNE and PHATE are drastically different.\n\u00a0 \u00a0 \u00a0 \u00a0\n\u00a0 \u00a0 \u00a0 \u00a0 In both cases, as a result of the embedding into the Euclidean plane, the ratio of the distances $d(1,2) / d(0,1)$ is roughly $\\sqrt{3}$ instead of the original $2$, the same is true for the other clusters. This is the optimal embedding that can be achieved when points are projected to Euclidean space. However, in the case of ClusterGraph (panel a), the distances are encoded as labels to the graph edges and therefore we are not restricted by any Euclidean coordinate system.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2411_05443v1_0.png",
+    "url": ""
+  },
+  "2411_05443v1_1": {
+    "caption": "Two examples of a disconnected $k$-nn graph. Both panels contain $100$ points sampled from the unit square. In panel (a) the points are sampled from the uniform distribution and $k=2$. In panel (b) the points are sampled from two normal distributions centered in $(0.25, 0.25)$ and $(0.75, 0.75)$ with variance $0.1$ and $k=20$.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2411_05443v1_1.png",
+    "url": ""
+  },
+  "2106_09282v1_0": {
+    "caption": "Figure 1: The overall architecture of our proposed method. (a) The local expert pattern extraction tool for extracting vulnerability-specific expert patterns. (b) The graph construction and normalization module for transforming the code into a global semantic graph. (c) The attentive multi-encoder network, which combines expert patterns and the graph feature for vulnerability detection and outputting explainable weights.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2106_09282v1_0.png",
+    "url": ""
+  },
+  "2106_09282v1_1": {
+    "caption": "Figure 2: The attentive multi-encoder network, consisting of a self-attention mechanism and a cross-attention mechanism. It combines local pattern features and the global graph feature for vulnerability detection, and outputs interpretable weights for all features.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2106_09282v1_1.png",
+    "url": ""
+  },
+  "2403_16073v3_0": {
+    "caption": "Figure 1: An overview of iAudit, featuring its four roles: Detector, Reasoner, Ranker, and Critic.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2403_16073v3_0.png",
+    "url": ""
+  },
+  "2403_16073v3_1": {
+    "caption": "TABLE 2: Performance comparison between iAudit\u2019s Detector and other fine-tuned models.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2403_16073v3_1.png",
+    "url": ""
+  },
+  "2403_16073v3_2": {
+    "caption": "Figure 7: Comparing iAudit with the integration models that make decisions and explain the vulnerabilities simultaneously.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2403_16073v3_2.png",
+    "url": ""
+  },
+  "2403_16073v3_3": {
+    "caption": "Figure 8: The Distribution of Voting Scores for Correct Predic_xFFFE_tions and Wrong Predictions.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2403_16073v3_3.png",
+    "url": ""
+  },
+  "2403_16073v3_4": {
+    "caption": "Table 3: Majority Voting vs. Single Prompt.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2403_16073v3_4.png",
+    "url": ""
+  },
+  "2310_13023v3_0": {
+    "caption": "Figure 2: The overall architecture of our proposed GraphGPT with graph instruction tuning paradigm.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2310_13023v3_0.png",
+    "url": ""
+  },
+  "2310_13023v3_1": {
+    "caption": "Figure 3: Workflow of text-structure alignment.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2310_13023v3_1.png",
+    "url": ""
+  },
+  "2404_17839v1_0": {
+    "caption": "Figure 3: Overview of Clear, which encompasses both the CL process, depicted by solid lines indicating the data flow, and the subsequent vulnerability detection process, represented by dotted arrows indicating the data flow.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2404_17839v1_0.png",
+    "url": ""
+  },
+  "2404_17839v1_1": {
+    "caption": "Figure 4: The feature distribution of smart contracts at dif_xFFFE_ferent epochs during the CL stage.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2404_17839v1_1.png",
+    "url": ""
+  },
+  "2211_14582v1_0": {
+    "caption": "Figure 2. The high-level pipeline of the proposed BAClassifier framework, which consists of three major modules, namely address graph construction, graph representation learning, and address classification.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2211_14582v1_0.png",
+    "url": ""
+  },
+  "2211_14582v1_1": {
+    "caption": "Figure 3. Illustration of the single-transaction address compression. The proposed SFE approach merged addresses that are connected to one transaction into a single-transaction hyper node.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2211_14582v1_1.png",
+    "url": ""
+  },
+  "2404_07382v3_0": {
+    "caption": "Figure 2: Method comparison. (a) A conventional system: The tactic generator (i.e., LLM) is fine-tuned on correct proof paths only. During inference, the trained tactic generator produces Nsampled (e.g., 2 in the example) tactics at a time. If Lean decides that the current tactic is wrong, the system backtracks to the last valid state and tries other candidate tactics. (b) Our methodology: The tactic generator is fine-tuned on proofs with trial-and-error. During inference, we take the first tactic it generates and feed that into Lean for state checking at each step.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2404_07382v3_0.png",
+    "url": ""
+  },
+  "2404_07382v3_1": {
+    "caption": "Table 4: Comparison of models trained on different lengths of proofs with trial-and-error on OOD task.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2404_07382v3_1.png",
+    "url": ""
+  },
+  "2404_07382v3_2": {
+    "caption": "Figure 5: Experiment results on OOD task. (a) We fix Nsampled = 10 to see the impact of temperature on the DFS system. (b) We fix t = 1.2 to see the impact of the number of sampled tactics. The number of Lean calls is noted beside the marker. (c) Comparison of NLean among our method and top 3 DFS systems with the highest success rate. In summary, training with trial-and-error achieves a higher success rate with a relatively lower search cost compared to the DFS systems.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2404_07382v3_2.png",
+    "url": ""
+  },
+  "2312_04512v2_0": {
+    "caption": "Figure 2. A high-level architecture and analysis pipeline of MuFuzz.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2312_04512v2_0.png",
+    "url": ""
+  },
+  "2312_04512v2_1": {
+    "caption": "Figure 7. Ablation study of each component in MuFuzz.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2312_04512v2_1.png",
+    "url": ""
+  },
+  "2312_04512v2_2": {
+    "caption": "Figure 1. A simplified Crowdsale contract derived from [15].",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2312_04512v2_2.png",
+    "url": ""
+  },
+  "2310_03016v1_0": {
+    "caption": "Figure 2: Performance of Transformers on various tasks with Teaching Sequences. The plots depict the performance of models right after the teaching sequence. Refer to Section 4 for more details.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2310_03016v1_0.png",
+    "url": ""
+  },
+  "2310_03016v1_1": {
+    "caption": "Figure 5: Results with the direct evaluation of LLMs at inference time. The top row shows the performance across varying dimensions for the Conjunction task while the bottom row shows the performance for the Majority task.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2310_03016v1_1.png",
+    "url": ""
+  },
+  "2310_03016v1_2": {
+    "caption": "Figure 16: Left: Performance of Feedforward networks (FFN) trained with gradient descent on Parity-(10, 2) with the same number of examples as provided to models in ICL setting. Right: Performance of FFN on Teach Conjunction task.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2310_03016v1_2.png",
+    "url": ""
+  },
+  "2310_03016v1_3": {
+    "caption": "Figure 3: Left: depicts the performance of Transformers trained on examples with the vanilla distribution and tested on in-context examples with Teaching Sequences. Center-left: Transformers trained with teaching sequences and tested on in-context examples without teaching sequences.\nCenter-right and right: depict the performance of Transformers trained on a mixture of Conjunction and Teach Conjunction and tested on the individual tasks. See Section 4 for more details.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2310_03016v1_3.png",
+    "url": ""
+  },
+  "2310_03016v1_4": {
+    "caption": "Figure 4: Experiments with frozen GPT: left: Performance of frozen GPT-2 on the Conjunction task, center: Frozen GPT-2 model learns to perfectly implement the nearest neighbors algorithm, right: Illustration of attention patterns in GPT-2 while solving the Nearest Neighbor task.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2310_03016v1_4.png",
+    "url": ""
+  },
+  "2202_10938v1_0": {
+    "caption": "Figure 1: An illustration of the BCFL system.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2202_10938v1_0.png",
+    "url": ""
+  },
+  "2202_10938v1_1": {
+    "caption": "Figure 2: Utilities changing with strategy pairs.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2202_10938v1_1.png",
+    "url": ""
+  },
+  "2403_14280v4_0": {
+    "caption": "Figure 3: The applications of LLM on the task of blockchain security.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2403_14280v4_0.png",
+    "url": ""
+  },
+  "2403_14280v4_1": {
+    "caption": "Figure 4: The architecture of LLM4FUZZ.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2403_14280v4_1.png",
+    "url": ""
+  },
+  "2410_07176v1_0": {
+    "caption": "Performance of Claude across different buckets ranked by retrieval precision",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2410_07176v1_0.png",
+    "url": ""
+  },
+  "2410_07176v1_1": {
+    "caption": "Performance of Claude on conflicting and consistent instances between No RAG and RAG.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2410_07176v1_1.png",
+    "url": ""
+  },
+  "2410_07176v1_2": {
+    "caption": "Worst-case performance of Claude on RGB, where all retrieved passages are negative. \\method reaches a performance close to No RAG, while other RAG systems are far behind. ",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2410_07176v1_2.png",
+    "url": ""
+  },
+  "2410_07176v1_3": {
+    "caption": "Qualitative examples. \\textit{Top:} \\method identified the error in internal knowledge (i.e., generated passage) by confirming with external sources. \\textit{Bottom:} \\method detected the correct answer from noisy retrieved information by checking with its internal knowledge. Standard RAG does not provide an answer because the retrieved passages are too noisy.",
+    "path": "../dataset/MRAMG-Bench/IMAGE/images/ARXIV/2410_07176v1_3.png",
+    "url": ""
+  }
+}
