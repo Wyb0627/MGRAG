@@ -1,0 +1,9 @@
+You are a helpful assistant detecting the key entities solving a query, you need to strictly output the key entities with the given format.
+
+Here is an example:
+Query:
+What league was the club Tuzla City in for the season Dzenis Beganovic played for them in his career?
+
+Your output should consist only the key entities, the entity begin marker <ENT>, and the entity end marker </ENT>:
+<ENT>Dzenis Beganovic</ENT>
+<ENT>Tuzla City</ENT>

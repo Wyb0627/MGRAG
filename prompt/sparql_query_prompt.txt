@@ -1,0 +1,32 @@
+Please build a SPARQL query to construct an RDF knowledge graph with respect to the given query and the answer, you need to build a SPARQL CONSTRUCT query that can be processed by the queryAndConvert() function of the RDFlib package.
+Here is an example:
+Query:
+What league was the club Tuzla City in for the season Dzenis Beganovic played for them in his career?
+Answer:
+Bosnian Premier League
+Response:
+<SPARQL>
+PREFIX ex: <http://example.org/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX schema: <http://schema.org/>
+
+CONSTRUCT {
+  ex:Dzenis_Beganovic schema:athlete ex:Tuzla_City ;
+                      schema:memberOf ex:Tuzla_City ;
+                      schema:season _:season .
+
+  ex:Tuzla_City schema:member ex:Dzenis_Beganovic ;
+               schema:sportLeague ex:Bosnian_Premier_League ;
+               schema:season _:season .
+
+  _:season schema:name "Season Dzenis Beganovic played for Tuzla City" ;
+           schema:league ex:Bosnian_Premier_League ;
+           schema:startDate ?startDate ;
+           schema:endDate ?endDate .
+}
+WHERE {
+  BIND (URI(CONCAT("http://example.org/season/", SHA1(CONCAT(STR(ex:Dzenis_Beganovic), STR(ex:Tuzla_City))))) AS _:season)
+  BIND ("2022-01-01"^^<http://www.w3.org/2001/XMLSchema#date> AS ?startDate)
+  BIND ("2022-12-31"^^<http://www.w3.org/2001/XMLSchema#date> AS ?endDate)
+}
+<\SPARQL>
